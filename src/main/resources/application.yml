@@ -1,1 +1,20 @@
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: jdbc:h2:mem:im/test;MODE=MYSQL
+  flyway:
+    enabled: true
+    locations: classpath:/db/migration/ddl, classpath:/db/test/data
+  jpa:
+    show-sql: true
+  h2:
+    console:
+      enabled: true
 
+logging:
+  level:
+    org.flywaydb: DEBUG
+    com.heycar.dealer: DEBUG
