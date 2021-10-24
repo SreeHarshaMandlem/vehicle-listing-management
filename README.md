@@ -31,7 +31,8 @@ The following are used for developing the application,
 
 #### Adding the project to local development environment
 1. Import using Git CLI:
-Use `git clone git@github.com:SreeHarshaMandlem/vehicle-listing-management.git` command from command line.
+Use following command from command line.
+`git clone git@github.com:SreeHarshaMandlem/vehicle-listing-management.git`
 
 2. Import using Intellij: 
 Use instructions from here: https://blog.jetbrains.com/idea/2020/10/clone-a-project-from-github/
@@ -53,5 +54,10 @@ In order to run the application locally and add necessary properties, a spring p
 * Run command `docker container run run -e "SPRING_PROFILES_ACTIVE=local" --publish 8080:8080 --detach --name vehicle-listing-management vehicle-listing-management` to start the container.
 * If you want to use port other than 8080, use `--publish <desired_port>:8080` instead.
 
+##### Testing Locally.    
+Postman can be used to test the APIs from local machine. Import the following collection into local postman(Also attached sample CSV file to test).
+[postman_collection.json.zip](./docs/postman_collection.json.zip) \
+[Example file.csv](./docs/file.csv)
+
 #### API Documentation and Swagger/Spring Fox
-Swagger/Spring Fox provides API documentation out of the box. Once the application is run as stated above, the documentation is made available at http://localhost:8080/swagger-ui/(if port is changed, use it instead of 8080)
+Swagger/Spring Fox provides API documentation out of the box. Once the application is run as stated above, the documentation is made available at http://localhost:8080/swagger-ui/ (if port is changed, use it instead of 8080)
