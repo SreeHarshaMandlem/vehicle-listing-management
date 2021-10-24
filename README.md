@@ -1,12 +1,12 @@
 # Vehicle Listing Management
 
-Dealer Listings Management provides a platform that can receive the listings from the dealers through different providers, and make them available on the platform.
+Vehicle Listing Management provides a platform that can receive the listings from the dealers through different providers, and make them available on the platform.
 
 * Dealer 	- The company that is publishing the car
 * Listing	- The car that is being published
 * Provider	- The platform the dealers already use to manage their own listings. Different providers send data in different formats, like CSV, JSON. 
 
-Dealer Data Management enables dealers to get listings from different sources(providers) and make them available here in a standardized format.
+Vehilce Listing Management enables dealers to get listings from different sources(providers) and make them available here in a standardized format.
 
 ## Architecture
 ![Architecture](./docs/architecture.png?raw=true "architecture.png")
@@ -53,3 +53,5 @@ In order to run the application locally and add necessary properties, a spring p
 * Run command `docker container run run -e "SPRING_PROFILES_ACTIVE=local" --publish 8080:8080 --detach --name vehicle-listing-management vehicle-listing-management` to start the container.
 * If you want to use port other than 8080, use `--publish <desired_port>:8080` instead.
 
+#### API Documentation and Swagger/Spring Fox
+Swagger/Spring Fox provides API documentation out of the box. Once the application is run as stated above, the documentation is made available at http://localhost:8080/swagger-ui/(if port is changed, use it instead of 8080)
